@@ -28,7 +28,8 @@ $(document).ready(function () {
     // Click Open Nav Mobile
 
     $(document).on("click", ".click-nav",function() {
-        $("").toggleClass("back");
+        $(".handle").toggleClass("closed");
+        $(".links-head").toggleClass("back");
     });
 
     // Slider Owl

@@ -254,6 +254,52 @@ button {
   }
 }
 
+.click-nav {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 999;
+  width: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.click-nav .handle {
+  background: #FDFFFC;
+  height: 1px;
+  width: 100%;
+  margin: 0.32em auto;
+  -webkit-transition: all 350ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
+  transition: all 350ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
+  -webkit-transition-timing-function: cubic-bezier(0.28, 0.55, 0.385, 1.65);
+          transition-timing-function: cubic-bezier(0.28, 0.55, 0.385, 1.65);
+}
+
+.click-nav .closed {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 40px;
+  position: relative;
+  top: 0px;
+}
+
+.click-nav .closed:nth-of-type(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: -0.5em 0.5em;
+}
+
+.click-nav .closed:nth-of-type(3) {
+  display: none;
+}
+
 .section-head {
   height: 100vh;
   position: relative;
@@ -299,7 +345,7 @@ button {
   z-index: 9;
 }
 
-.section-head .bg-overlay header ul li a {
+.section-head .bg-overlay header .links-head ul li a {
   color: #FFF;
   padding: 10px 0;
   -webkit-padding-end: 20px;
@@ -321,5 +367,51 @@ button {
 
 .section-head .bg-overlay .text-head p {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 990px) {
+  .click-nav {
+    display: inline-block;
+  }
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  header .links-head {
+    position: fixed;
+    top: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    left: 0;
+    right: auto;
+    margin: auto;
+    background-color: #FFF;
+    padding: 30px;
+    width: 300px;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .links-head ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  header .links-head ul li {
+    display: block;
+    width: 100%;
+  }
+  header .links-head ul li a {
+    display: block;
+    width: 100%;
+    color: #fbac26 !important;
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=global.css.map */
