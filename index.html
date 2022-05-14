@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 
     <!-- Title Page -->
-    <title>inkky</title>
+    <title>Task</title>
 
     <!-- Favicon Page -->
     <link rel="shortcut icon" href="https://img.pngio.com/yellow-circle-transparent-background-logo-image-free-logo-png-yellow-circle-png-2000_1902.png">
@@ -20,6 +20,7 @@
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/global.css">
@@ -37,299 +38,51 @@
         </div>
     </div>
 
-    <!-- Choose Theme Color-->
-    <div class="theme-color">
-        <button data-color="#006ea7"></button>
-        <button data-color="#840e0e"></button>
-        <button data-color="#0E77FF"></button>
-        <button data-color="#363636"></button>
-        <a class="btn-setting">
-            <i class="fa-solid fa-gear"></i>
-        </a>
-    </div>
+    <!-- Start Section Head -->
 
-    <!-- Header Section -->
-    <div id="Home" class="section-head">
-
-        <!-- Header -->
-        <div class="header">
+    <div class="section-head">
+        <video playsinline="" muted="" onplaying="this.controls=false" autoplay loop id="video">
+            <source src="./docs/Videos.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="./docs/Videos.webm" type='video/webm; codecs="vp8, vorbis"'>
+            <source src="./docs/video/Videos.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        </video>
+        <div class="bg-overlay">
             <div class="container">
-                <div class="head-header d-flex align-items-center justify-content-between pt-3 pb-3">
-                    <a href="" data-aos="zoom-in" data-aos-offset="0">
-                        <h1 id="logo" class="m-0 color-white"></h1>
-                    </a>
-                    <div class="click-nav">
-                        <div class='handle'></div>
-                        <div class='handle'></div>
-                        <div class='handle'></div>
-                    </div>
-                    <div class="d-flex align-items-center head-links">
-                        <ul class="d-flex align-items-center position-relative">
-                            <i class="marker"></i>
-                            <li class="active">
-                                <a href="" data-value="Home" id="nameHome" class="mx-3 color-white position-relative"></a>
-                            </li>
-                            <li>
-                                <a href="" data-value="About" id="nameAbout" class="mx-3 color-white position-relative"></a>
-                            </li>
-                            <li>
-                                <a href="" data-value="Services" id="nameServices" class="mx-3 color-white position-relative"></a>
-                            </li>
-                            <li>
-                                <a href="" data-value="Projects" id="projects" class="mx-3 color-white position-relative"></a>
-                            </li>
-                            <li>
-                                <a href="" data-value="Testimonials" id="nameTestimonials" class="mx-3 color-white position-relative"></a>
-                            </li>
-                            <li>
-                                <a href="" data-value="Contact" id="nameContact" class="mx-3 color-white position-relative"></a>
-                            </li>
+                <!-- Start Header -->
+                <header class="d-flex align-items-center justify-content-between">
+                    <div class="">
+                        <ul class="d-flex d-flex align-items-center">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Clients</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact Us</a></li>
                         </ul>
-                        <button class="btn-lang color-default" value=""></button>
+                    </div>
+                    <p class="color-white m-0">
+                        <i class="fa-solid fa-phone mx-2"></i>
+                        <span>Hotline : +545 345 4344</span>
+                    </p>
+                </header>
+                <!-- Start Text About -->
+                <div class="text-head">
+                    <div class="text-center d-flex align-items-center justify-content-center flex-column h-100" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                        <h1 class="color-white m-0">Fusion Travel</h1>
+                        <p class="color-white">Lets Discover The World Together</p>
+                        <button class="btn-button btn-default rounded-pill">Plan Your Trip</button>
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
+    </div>
+
+
+    <!-- <div id="sliderWelcome" class="owl-carousel owl-theme slider-welcome animate-box">
+        <div class="item">
         
-        <!-- Wave -->
-        <section class="wave-section" data-aos="fade-up" data-aos-offset="0">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
-        </section>
-
-        <!-- Content View Head -->
-        <div class="content-view">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12 position-relative" data-aos="fade-up" data-aos-offset="0">
-                        <div class="head-title">
-                            <h1 class="color-white fw-bold" id="doneChoose"></h1>
-                            <p class="color-white" id="infoChoose"></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                        <div class="shape-anime position-relative" data-aos="zoom-in" data-aos-offset="0">
-                            <div class="shape"></div>
-                            <img src="./img/15.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
-    </div>
-
-    <!-- About Section -->
-    <div id="About" class="about-section py-5 d-flex align-items-center justify-content-between">
-        <div class="section-info-about flex-fill">
-            <div class="block-about">
-                <h2 id="titleAbout" class="title-info color-default fw-bold"></h2>
-                <p id="infoAbout"></p>
-                <ul>
-                    <li class="mt-2 mb-2">
-                        <span><i class="fa-solid fa-check"></i></span>
-                        <strong id="li1"></strong>
-                    </li>
-                    <li class="mt-2 mb-2">
-                        <span><i class="fa-solid fa-check"></i></span>
-                        <strong id="li2"></strong>
-                    </li>
-                    <li class="mt-2 mb-2">
-                        <span><i class="fa-solid fa-check"></i></span>
-                        <strong id="li3"></strong>
-                    </li>
-                    <li class="mt-2 mb-2">
-                        <span><i class="fa-solid fa-check"></i></span>
-                        <strong id="li4"></strong>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="img-about flex-fill text-center">
-            <img  data-aos="zoom-in" data-aos-offset="100" src="./img/g10.gif" loading="lazy">
-        </div>
-    </div>
-
-    <!-- Services Section -->
-    <div id="Services" class="services-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-xs-12">
-                    <div class="head-section text-center mt-5 mb-5">
-                        <h2 id="titleServices" class="color-default fw-bold"></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="block-services mt-3 mb-3 p-5 position-relative text-center" data-aos="zoom-in" data-aos-offset="100">
-                        <div class="position-relative" style="z-index: 9;">
-                            <img src="./img/bag.png" alt="" class="mt-2 mb-2">
-                            <h4 class="fw-bold color-default">Web Developer</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block-services mt-3 mb-3 p-5 position-relative text-center" data-aos="zoom-in" data-aos-offset="150">
-                        <div class="position-relative" style="z-index: 9;">
-                            <img src="./img/bag.png" alt="" class="mt-2 mb-2">
-                            <h4 class="fw-bold color-default">React Developer</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block-services mt-3 mb-3 p-5 position-relative text-center" data-aos="zoom-in" data-aos-offset="200">
-                        <div class="position-relative" style="z-index: 9;">
-                            <img src="./img/bag.png" alt="" class="mt-2 mb-2">
-                            <h4 class="fw-bold color-default">React Native</h4>
-                            <!-- <p id="infoAbout"></p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block-services mt-3 mb-3 p-5 position-relative text-center" data-aos="zoom-in" data-aos-offset="100">
-                        <div class="position-relative" style="z-index: 9;">
-                            <img src="./img/bag.png" alt="" class="mt-2 mb-2">
-                            <h4 class="fw-bold color-default">Angular Developer</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block-services mt-3 mb-3 p-5 position-relative text-center" data-aos="zoom-in" data-aos-offset="150">
-                        <div class="position-relative" style="z-index: 9;">
-                            <img src="./img/bag.png" alt="" class="mt-2 mb-2">
-                            <h4 class="fw-bold color-default">Ionic Native</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block-services mt-3 mb-3 p-5 position-relative text-center" data-aos="zoom-in" data-aos-offset="200">
-                        <div class="position-relative" style="z-index: 9;">
-                            <img src="./img/bag.png" alt="" class="mt-2 mb-2">
-                            <h4 class="fw-bold color-default">Node JS Developer</h4>
-                            <!-- <p id="infoAbout"></p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div id="Projects" class="projects-section py-5">
-        <div class="container">
-
-            <ul class="tab-filter d-flex align-items-center justify-content-center mb-5">
-                <li data-filter="all" id="all" class="m"></li>
-                <li data-filter=".web" id="webDes" class="mx-2 d-flex"></li>
-                <li data-filter=".react" id="react" class="mx-2 d-flex"></li>
-                <li data-filter=".apps" id="netive" class="mx-2 d-flex"></li>
-            </ul>
-
-            <div class="row justify-content-center container-item">
-                <div class="col-md-4 mix web">
-                    <div class="box-project my-3">
-                        <img src="https://www.uxweb-design.com/wp-content/uploads/2019/10/Web-design-1.jpg" loading="lazy">
-                    </div>
-                </div>
-                <div class="col-md-4 mix react">
-                    <div class="box-project my-3">
-                        <img src="http://rockcontent.com/wp-content/uploads/2020/09/web-design.png" loading="lazy">
-                    </div>
-                </div>
-                <div class="col-md-4 mix apps">
-                    <div class="box-project my-3">
-                        <img src="https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000" loading="lazy">
-                    </div>
-                </div>
-                <div class="col-md-4 mix web">
-                    <div class="box-project my-3">
-                        <img src="https://usabilitygeek.com/wp-content/uploads/2019/02/psychology-web-design-00-lead.jpg" loading="lazy">
-                    </div>
-                </div>
-                <div class="col-md-4 mix apps">
-                    <div class="box-project my-3">
-                        <img src="https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000" loading="lazy">
-                    </div>
-                </div>
-                <div class="col-md-4 mix react">
-                    <div class="box-project my-3">
-                        <img src="http://rockcontent.com/wp-content/uploads/2020/09/web-design.png" loading="lazy">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Section Contact Us -->
-    <div id="Contact" class="contact-section position-relative pt-5">
-        <div class="container mw-100">
-            <div class="row justify-content-center">
-                <div class="col-md-6 p-0">
-                    <div class="form-section position-relative">
-                        <form action="" class="over-contact p-4">
-                            <div class="input-val my-4">
-                                <input type="text" id="inName" placeholder="">
-                            </div>
-                            <div class="input-val my-4">
-                                <input type="tel" id="inMobile" placeholder="">
-                            </div>
-                            <div class="input-val my-4">
-                                <input type="email" id="inEmail" placeholder="">
-                            </div>
-                            <div class="input-val my-4">
-                                <textarea id="inInfo" placeholder=""></textarea>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn-button btn-white" id="sentForm"></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0">
-                    <div class="img-contact position-relative text-center" data-aos="zoom-in" data-aos-offset="100">
-                        <img src="./img/g7.gif" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Section Footer -->
-    <footer>
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-center py-2">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div> -->
 
 
 
@@ -341,11 +94,12 @@
     
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/translate.js"></script>
     <script src="./js/script.js"></script>
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

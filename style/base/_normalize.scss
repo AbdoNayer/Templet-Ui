@@ -1,6 +1,11 @@
 // Font Import Cdn
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;700&display=swap');
+:root{
+  --mainColor             : #fbac26;
+  --white                 : #FFF;
+  --black                 : #000000;
+}
 
 // Local Style Page
 
@@ -15,7 +20,7 @@
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a, button, input, textarea, i{
@@ -75,9 +80,8 @@ button{
 
 .btn-button{
   border-radius: 3px;
-  height: 50px;
-  line-height: 50px;
-  width: 150px;
+  height: 40px;
+  width: 200px;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -101,7 +105,6 @@ button{
   &:hover{
     background-color: var(--mainColor) !important;
     color: var(--white) !important;
-    border: 1px solid var(--mainColor) !important;
   }
 }
 
@@ -109,10 +112,6 @@ button{
 
 .color-default{
   color: var(--mainColor) !important;
-}
-
-.bg-default{
-  background-color: var(--mainColor) !important;
 }
 
 .color-black{
@@ -133,55 +132,6 @@ button{
 ::-moz-selection {
   background: var(--mainColor);
   color: var(--white);
-}
-
-// Style Form Validation
-
-input{
-  width: 100%;
-  padding: 10px 20px;
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
-  background-color: var(--white);
-  height: 50px;
-  font-size: 14px;
-  border-radius: 5px;
-  font-weight: bold;
-  @include transition(0.5s);
-}
-
-textarea{
-  width: 100%;
-  padding: 10px 20px;
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
-  background-color: var(--white);
-  font-size: 14px;
-  resize: none;
-  min-height: 210px;
-  border-radius: 5px;
-  font-weight: bold;
-  @include transition(0.5s);
-}
-
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder{
-  color: var(--mainColor);
-  opacity: 1;
-}
-
-input, textarea{
-  &:focus::-webkit-input-placeholder{
-    opacity: 0;
-  }
-}
-
-input, textarea {
-  &:focus{
-    border-color: var(--mainColor) !important;
-  }
 }
 
 // Back Translate
