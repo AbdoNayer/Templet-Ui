@@ -5,6 +5,11 @@
         display: inline-block;
     }
 
+    // Text Section Head
+    .text-welcome {
+        margin-bottom: 50px;
+    }
+
     // Header
     header{
         flex-direction: row-reverse;
@@ -39,6 +44,81 @@
                 .block-item-welcome{
                     margin: 40px 25px;
                 }
+            }
+        }
+    }
+
+    // Style Section Latest
+    .section-latest{
+        .row{
+            .block-item-latest{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                .shape-border {
+                    &:before, &:after{
+                        content: "";
+                        position: absolute;
+                        background-color: #fbac26;
+                        z-index: 998;
+                        @include transition(0.5s);
+                    }
+                    &.shape-1:before, &.shape-1:after{
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &.shape-2:before, &.shape-2:after{
+                        top: 0;
+                        right: 0;
+                    }
+                    &.shape-1:before, &.shape-2:before{
+                        width: 1px;
+                        height: 100%;
+                    }
+                    &.shape-1:after, &.shape-2:after{
+                        height: 1px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Style Section Client
+    .section-client{
+        .slider-client{
+            .block-item-client{
+                flex-direction: column;
+                .img-client{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .info-client{
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+
+    // Style Section Contact
+    .section-contact{
+        padding: 30px 0;
+        margin-top: 80px;
+        text-align: center;
+        .d-flex{
+            flex-direction: column;
+            h1{
+                margin: 20px 0 !important;
+            }
+        }
+    }
+
+    // Style Section Footer
+    footer{
+        .row{
+            .head-link{
+                margin: 5px 0;
+                padding: 5px 0;
             }
         }
     }

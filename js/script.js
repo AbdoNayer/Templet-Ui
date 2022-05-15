@@ -66,7 +66,7 @@ $(document).ready(function () {
         loop:true,
         margin:0,
         center:true,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout: 7000,
         smartSpeed: 1000,
         animateOut: 'fadeOut',

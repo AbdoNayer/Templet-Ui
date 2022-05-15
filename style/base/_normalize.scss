@@ -99,12 +99,12 @@ button{
 }
 
 .btn-white{
-  background: var(--white) !important;
-  color: var(--mainColor) !important;
+  background: var(--mainColor) !important;
+  color: var(--white) !important;
   border: 1px solid var(--white) !important;
   &:hover{
-    background-color: var(--mainColor) !important;
-    color: var(--white) !important;
+    background-color: var(--white) !important;
+    color: var(--mainColor) !important;
   }
 }
 
