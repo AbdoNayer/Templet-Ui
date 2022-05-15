@@ -54,6 +54,34 @@ $(document).ready(function () {
                 items:1
             },
             900:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+    $('#sliderClient').owlCarousel({
+        loop:true,
+        margin:0,
+        center:true,
+        autoplay:true,
+        autoplayTimeout: 7000,
+        smartSpeed: 1000,
+        animateOut: 'fadeOut',
+        dragEndSpeed: 7000,
+        pagination : false,
+        nav:true,
+        navText: [
+            '<i class="icon-arrow-left"></i>',
+            '<i class="icon-arrow-right"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
                 items:1
             },
             1000:{
